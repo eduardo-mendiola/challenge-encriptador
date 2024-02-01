@@ -1,0 +1,135 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #F3F5FC;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.panel-izq {
+  align-self: flex-start;
+}
+
+.logo {
+  margin: 10px 0px 0px 0px;
+  width: 110px;
+  height: auto;
+}
+
+textarea {
+  font-family: inherit;
+  margin-top: 60px;
+  resize: none;
+  overflow: hidden;
+  border: none;
+  font-size: 28px;
+  background-color: #F3F5FC;
+  color: #0A3871;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: #0A3871;
+  }
+  
+}
+
+.nota {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1.2rem;
+  color: #495057;
+  font-size: 15px;
+}
+
+.line-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn-encriptar {
+  width: 240px;
+  height: 48px;
+  border-radius: 15px;
+  background-color: #0A3871;
+  border: solid 2px #0A3871;
+  color: white;
+  font-size: 16px;
+}
+
+.btn-desencriptar {
+  width: 240px;
+  height: 48px;
+  border-radius: 15px;
+  background-color: #CED4DA;
+  border: solid 2px #0A3871;
+  color: #0A3871;
+  font-size: 16px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 32px;
+  width: 300px;
+  height: 450px;
+  margin: 30px 40px 30px 0px;
+  padding: 0px 40px 0px 40px;
+  box-shadow: 0px 0px 8px 0px #CED4DA;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.munieco {
+  width: 200px;
+  height: auto;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #343A40;
+  margin: 25px;
+}
+
+h3 {
+  font-size: 13px;
+  color: #495057;
+  margin-bottom: 25px;
+}
+
+.btn-copiar {
+  width: 240px;
+  height: 48px;
+  border-radius: 15px;
+  background-color: white;
+  border: solid 2px #0A3871;
+  color: #0A3871;
+  font-size: 16px;
+}
+
+
+
+footer {
+  background-color: #495057;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
