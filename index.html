@@ -26,26 +26,25 @@
 
     <section class="panel-central">
       <form action="">
-        <textarea name="" id="" cols="30" rows="9" placeholder="Ingrese el texto aquí"></textarea>
+        <textarea name="" id="cajaDeTexto" cols="30" rows="9" placeholder="Ingrese el texto aquí"></textarea>
         <div class="nota">
           <img src="image/bi_exclamation-circle-fill.svg" alt="">
           <h4>Solo letras minúsculas y sin acentos</h4>
         </div>
         <div class="line-btn">
-          <input class="btn-encriptar" type="submit" value="Encriptar">
-          <input class="btn-desencriptar" type="submit" value="Desencriptar">
+          <input class="btn-encriptar" type="button" value="Encriptar" onclick="encriptarTexto()">
+          <input class="btn-desencriptar" type="button" value="Desencriptar" onclick="desencriptarTexto()">
         </div>
-        
       </form>
     </section>
 
     <section class="panel-derecho">
       <div class="card">
-        <p></p>
-        <img class="munieco" src="image/Muñeco.svg" alt="">
-        <h2>Ningún mensaje fue <br> encontrado</h2>
+        <!-- <p id="encrip-text"></p> -->
+        <img id="munieco" class="munieco" src="image/Muñeco.svg" alt="">
+        <h2 id="encrip-text">Ningún mensaje fue <br> encontrado</h2>
         <h3>Ingresa el texto que desees encriptar o <br> desencriptar.</h3>
-        <button class="btn-copiar">Copiar</button>
+        <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
       </div>
     </section>
   </main>
