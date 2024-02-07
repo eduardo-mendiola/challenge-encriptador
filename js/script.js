@@ -1,10 +1,28 @@
+function validarCaracteres() {
+  let inputText = document.getElementById("cajaDeTexto").value;
+  const regExpMin = /^[a-z]+$/;
+  document.getElementById("cajaDeTexto").placeholder = "";
+  
+  if (!regExpMin.test(inputText)) {
+    document.getElementById("btn-encriptar").disabled = true;
+    document.getElementById("btn-desencriptar").disabled = true;
+    document.getElementById("warning").className = "warning";
+  } else {
+    document.getElementById("btn-encriptar").disabled = false;
+    document.getElementById("btn-desencriptar").disabled = false;
+    document.getElementById("warning").className = "nota";
+  }
+}
+
+// Variable a la que se asignara el valor de la caja de texto ecriptado/desencriptado.
 let textoEncriptado = "";
 
 function encriptarTexto() {
   let texto = document.getElementById("cajaDeTexto").value;
   console.log(texto);
   document.getElementById("munieco").style.display = "none";
-  document.getElementById("cajaDeTexto").value = "Encripta otro texto!";
+  document.getElementById("cajaDeTexto").value = "";
+  document.getElementById("cajaDeTexto").placeholder = "Encripta otro texto!";
 
   textoEncriptado = texto
     .replaceAll("e", "enter")
@@ -33,7 +51,6 @@ function desencriptarTexto() {
   document.getElementById("encrip-text").innerHTML = textoDesencriptado;
 }
 
-
 function copiarTexto() {
   navigator.clipboard
     .writeText(textoEncriptado)
@@ -44,3 +61,4 @@ function copiarTexto() {
       console.error("Error al copiar al portapapeles:", err);
     });
 }
+

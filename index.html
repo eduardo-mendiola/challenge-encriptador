@@ -26,14 +26,14 @@
 
     <section class="panel-central">
       <form action="">
-        <textarea name="" id="cajaDeTexto" cols="30" rows="9" placeholder="Ingrese el texto aquí"></textarea>
-        <div class="nota">
+        <textarea name="" id="cajaDeTexto" cols="30" rows="9" placeholder="Ingrese el texto aquí" onkeyup="validarCaracteres()"></textarea>
+        <div id="warning" class="nota">
           <img src="image/bi_exclamation-circle-fill.svg" alt="">
           <h4>Solo letras minúsculas y sin acentos</h4>
         </div>
         <div class="line-btn">
-          <input class="btn-encriptar" type="button" value="Encriptar" onclick="encriptarTexto()">
-          <input class="btn-desencriptar" type="button" value="Desencriptar" onclick="desencriptarTexto()">
+          <input id="btn-encriptar" class="btn-encriptar" type="button" value="Encriptar" onclick="encriptarTexto()">
+          <input id="btn-desencriptar" class="btn-desencriptar" type="button" value="Desencriptar" onclick="desencriptarTexto()">
         </div>
       </form>
     </section>
