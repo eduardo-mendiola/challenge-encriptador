@@ -97,6 +97,17 @@ textarea {
   }
 }
 
+.btn-error {
+  width: 240px;
+  height: 48px;
+  border-radius: 15px;
+  background-color: #E9ECF8;
+  border: solid 2px #E9ECF8;
+  color: #868E96;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .card {
   background-color: white;
   border-radius: 32px;

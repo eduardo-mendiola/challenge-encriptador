@@ -5,11 +5,15 @@ function validarCaracteres() {
   
   if (!regExpMin.test(inputText)) {
     document.getElementById("btn-encriptar").disabled = true;
+    document.getElementById("btn-encriptar").className = "btn-error";
     document.getElementById("btn-desencriptar").disabled = true;
+    document.getElementById("btn-desencriptar").className = "btn-error";
     document.getElementById("warning").className = "warning";
   } else {
     document.getElementById("btn-encriptar").disabled = false;
+    document.getElementById("btn-encriptar").className = "btn-encriptar";
     document.getElementById("btn-desencriptar").disabled = false;
+    document.getElementById("btn-desencriptar").className = "btn-desencriptar";
     document.getElementById("warning").className = "nota";
   }
 }
