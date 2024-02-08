@@ -1,6 +1,6 @@
 function validarCaracteres() {
   let inputText = document.getElementById("cajaDeTexto").value;
-  const regExpMin = /^[a-z]+$/;
+  const regExpMin = /^[a-z\s]+$/;
   document.getElementById("cajaDeTexto").placeholder = "";
   
   if (!regExpMin.test(inputText)) {
